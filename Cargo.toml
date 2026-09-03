@@ -1,0 +1,9 @@
+[package]
+name = "iphone-lan-uploader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "fs", "io-util", "signal"] }
+tower-http = { version = "0.5", features = ["limit"] }
