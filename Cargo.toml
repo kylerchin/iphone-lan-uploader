@@ -5,5 +5,8 @@ edition = "2021"
 
 [dependencies]
 axum = { version = "0.7", features = ["multipart"] }
+futures-util = "0.3"
+httpdate = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "fs", "io-util", "signal"] }
 tower-http = { version = "0.5", features = ["limit"] }
+zip = { version = "2.4", default-features = false }
